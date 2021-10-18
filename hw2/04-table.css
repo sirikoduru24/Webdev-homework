@@ -4,8 +4,21 @@
 
 .table-heading {
   /* use green and white for the colors - these colors are defined in the styles.css file */
+  background-color: green;
+  color: white;
 }
 
 .channel {
+  background-color: orange;
+  color: black;
   /* use orange and black for the colors - these colors are defined in the styles.css file */
+}
+
+th {
+  height: 50px;
+  width: 170px;
+}
+
+tr:hover {
+  background-color: var(--lightorange);
 }

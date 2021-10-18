@@ -1,14 +1,85 @@
-.form {
+#form {
+    width: 400px;
+    display: block;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
 }
 
+input[type = "text"] {
+    width: 60%;
+    padding: 3px;
+    margin-bottom: 10px; 
+    border: 2px solid #cccccc;
+}
+
+input[type = "email"] {
+    width: 60%;
+    margin-bottom: 10px; 
+    border: 2px solid #cccccc;
+    padding: 3px;
+}
+
+input[type = "password"] {
+    width: 60%;
+    margin-bottom: 10px; 
+    border: 2px solid #cccccc;
+    padding: 3px;
+}
+
+
+fieldset {
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    font-weight: bold;
+}
+:-moz-placeholder {
+    color: black;
+    font-weight: bold;
+}
+:-ms-input-placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+legend {
+    padding: 0;
+    margin-bottom: 0.2em;
+}
 .form-element {
 }
-
+.btn,.reset {
+    font-weight: bold;
+    width: 45%;
+    height:30px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: white;
+}
 .btn {
+    background-color: green;
+    color:white;
 }
 
-.btn-primary {
+.reset {
+    color: green;
 }
 
-.btn-secondary {
+.btn:hover{
+    background-color: orange;
+    color: black;
 }

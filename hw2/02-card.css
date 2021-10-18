@@ -1,11 +1,27 @@
 .container {
   width: 300px;
+  padding: 5px 20px 20px 20px;
+  border: navy solid 1px;
+  border-radius: 10px;
 }
-
+h1 {
+  text-align: center;
+  color:navy;
+}
 .image {
   width: 100%;
 }
 
 .btn {
   width: 100%;
+  height: 35px;
+  background-color:navy;
+  color: white;
+  font: bold;
+}
+
+.btn:hover{
+  background-color:orange;
+  color: black;
+  font: bold;
 }

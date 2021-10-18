@@ -3,10 +3,53 @@ body {
 }
 
 .nav-list {
+  background-color: green;
+  padding-left: 0;
+  list-style-type: none;
+  position: fixed;
+  width: 80vw;
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: left;
 }
 
 .list-item {
+  font-size: 1.3em;
+  text-align: center;
+  width: 22vw;
 }
 
 .nav-link {
+    display: block;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color:orange;
+  color: black;
+}
+.nav-link:active {
+  background-color: orange;
+  color: black;
+}
+.nav-link:focus {
+  background-color: orange;
+  color: black;
+}
+
+@media (max-width: 414px) {
+  .nav-list {
+      flex-flow: column wrap;
+      justify-content: space-around;
+      width: 100%;
+  }    
+}
+@media (min-width: 415px) {
+  .nav-list {
+      justify-content: left;
+  }
 }
