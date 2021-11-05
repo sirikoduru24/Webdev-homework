@@ -6,12 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
     <script defer src="05-form.js"></script>
+    <link rel="stylesheet" href="../hw2/05-form.css" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <main>
+      <div id = "form">
+      <h1>REGISTRATION <span>
+        FORM
+      </span></h1>
       <form class="form" action="">
-        <h1 class="title">Registration Form</h1>
+        <label for="name"><b>Username:&nbsp;</b></label>
+            <input type="text" id="name" name="name"/>
+            <br/><br/>
+            <label for="email"><b>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            <input type="email" id="email" name="email"/>
+            <br/><br/>
+            <label for="password"><b>Password: &nbsp;</b></label>
+            <input type="password" id="password" name="password"/>
+            <br/><br/>
+            
+            <fieldset>
+              <legend><b>Would you like to sign up for the news letter?</b></legend>
+              <input type="radio" id = "yes" name = "class-section" value = "yes"/>
+              <label for="yes">Yes, Sign me up</label><br/>
+              <input type="radio" id = "no" name = "class-section" value = "no"/>
+              <label for="no">No, thank you</label>   
+            </fieldset><br/>
+            
+            <label for="date"><b>Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            <input type="text" placeholder="mm/dd/yyyy" id="date" name="date"/>
+            <br/><br/>
+            
+
+            <input type="submit" name="submit" value="Submit" class = "btn"/>
+            <input type="reset" name="reset" value="Reset" class = "reset"/>
       </form>
+    </div>
     </main>
   </body>
 </html>

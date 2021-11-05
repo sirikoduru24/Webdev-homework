@@ -1,5 +1,23 @@
 const calculateAge = (date1, date2) => {
   // Given two dates, calculate and return the amount of time in between, in years and months
+  const d1 = new Date(date1);
+  const d2 = new Date(date2);
+  const [y1,m1] = [d1.getFullYear(),d1.getMonth()];
+  const [y2,m2] = [d2.getFullYear(), d2.getMonth()];
+  const diff = d1.getTime() - d2.getTime();
+  const diffDate = new Date(diff);
+  const [year,month] = [diffDate.getFullYear(),diffDate.getMonth()];
+  if(!isNaN(year)) {
+  if(year - 1970 == 0) {
+    return "Age: "+ month + " months";
+  } else if(month == 0) {
+    return "Age: "+(year-1970) + " years";
+  } else {
+    return "Age: "+(year-1970 )+ " years, " +month+" months";
+  }
+} else {
+  return "Error: Invalid input provided";
+}
 };
 
 // Date() formats:
