@@ -12,3 +12,16 @@
   background-color: var(--purple);
   color: var(--white);
 }
+
+ #namediv:hover {
+  color:white;
+} 
+#maindiv:hover {
+  background-color: purple;
+}
+
+#namediv {
+  font: black;
+  text-align: center;
+  font-size: 1.25em;
+}
